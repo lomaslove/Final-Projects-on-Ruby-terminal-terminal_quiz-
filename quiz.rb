@@ -7,11 +7,11 @@ class Question #class to create the questions and answers
 end 
 
 #Different questions
-q1 = "what is the capital of australia?\n(a) sydney \n(b) brisbane \n(c) canberra"
-q2 ="what number bus goes to spring hill?\n(a) 230 \n(b) 40 \n(c) 30"
-q3 = "what level is coder academy? \n(a)2 \n(b)3 \n(c)4"
-q4= "how many chamber are there in human heart?\n(a) 1 \n(b) 2 \n(c) 4"
-q5= "what kind of mindset do you have?\n(a) growth mindset \m(b) fixed mindset \(c) not set yet"
+q1 = "What is the capital of australia?\n(a) sydney \n(b) brisbane \n(c) canberra"
+q2 ="What number bus goes to spring hill?\n(a) 230 \n(b) 40 \n(c) 30"
+q3 = "What level is coder academy? \n(a)2 \n(b)3 \n(c)4"
+q4= "How many chamber are there in human heart?\n(a) 1 \n(b) 2 \n(c) 4"
+q5= "What kind of mindset do you have?\n(a) growth mindset \n(b) fixed mindset \n(c) not set yet"
 #store the questions as new instances of the class with the prompt and answer
 questions = [
     Question.new(q1, "c"),
@@ -56,4 +56,15 @@ end
 #the actual program
 puts "Welcome to the Quiz! type quit to exit early"
 score = run_test(questions) #because the method returns the score you can set it via running the method
-puts ("your have scored" + " " +  score.to_s + "/" + questions.length.to_s)
+
+if score == 0 
+    puts "Better luck next time! You scored #{score}/#{questions.length}."
+elsif score <= 3
+    puts ("Good effort! You scored" + " " +  score.to_s + "/" + questions.length.to_s)
+else 
+    puts "Congratulations! You scored #{score}/#{questions.length}"
+end
+Collapse
+
+
+
