@@ -24,6 +24,7 @@ questions = [
 
 def run_test(questions)
     score = 0
+    answer=""
     # p   questions  <- This was a test to see why the looping didn't work and to check the array is correct
     questions.each do |question| #for the actual question in the array of questions
         # p question <- Another bug check to see why looping wasn't working SPOILER I had the looping set to false
@@ -35,15 +36,23 @@ def run_test(questions)
                 puts "Correct!"
                 score += 1
                 looping = false
+            elsif answer == "quit"
+            puts ("your have scored" + " " +  score.to_s + "/" + questions.length.to_s)
+             exit
+            elsif answer == "quit" # option to quit the quiz anytime.
             elsif answer !=  "a" and answer != "b" and answer != "c"
-                puts "Invalid input. Please try again:"
+                puts "Invalid input. Please try again:"     
             else 
                 puts "Sorry, the correct answer was #{question.answer}"
                 looping = false 
             end 
         end 
     end 
+    return score
 end
 
+puts "Welcome to the Quiz! type quit to exit early"
+score = run_test(questions) 
+puts ("your have scored" + " " +  score.to_s + "/" + questions.length.to_s)
 
-run_test(questions)
+    
