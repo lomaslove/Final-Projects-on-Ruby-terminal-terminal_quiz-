@@ -38,6 +38,18 @@ This program allows users to enter an answer to a question and know whether or n
 Welcome --> Presents the question --> user gives an answer --> tells them whether its correct or not --> moves to next question --> repeats until end of questions --> gives a final score.
 
 -------------------------------------------------------------------------------------------------------------------
+## Future Updates/To be added:
+ 
+ - Randomize question and answer order
+        - (&m make sure that the questions don't appear multiple times when doing so)
+ - Add a timer
+ - Add some cool funky quiz music 
+ - Allow for multiple users at once
+ - Create a separated questions folder 
+ - Only allow a certain number of tries
+ - Save results/current progress
+
+
 
 ## Project plan:
 
@@ -59,6 +71,7 @@ Welcome --> Presents the question --> user gives an answer --> tells them whethe
 ![trello board](https://github.com/lomaslove/terminal_quiz/blob/master/screenshots/Screenshot%20(3).png)
 ![github](https://github.com/lomaslove/terminal_quiz/blob/master/screenshots/Screenshot%20(5).png)
 ![source code](https://github.com/lomaslove/terminal_quiz/blob/master/screenshots/Screenshot%20(6).png)
+Collapse
 
 
 
