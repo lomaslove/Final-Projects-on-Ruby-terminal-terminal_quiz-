@@ -1,3 +1,5 @@
+require 'colorized_string'
+
 class Question #class to create the questions and answers
     attr_accessor :prompt, :answer
     def initialize(prompt, answer)
@@ -33,19 +35,20 @@ def run_test(questions) #method to run the test
             answer = gets.chomp.downcase #gets an answer from the quizee
             if answer == question.answer #takes the answer and compares it - then adds one to the score
                 system"clear"
-                puts "Correct!"
+                puts ColorizedString["Correct!"].colorize(:green)
                 score += 1
                 looping = false #ends the loop
             elsif answer == "quit" #allows the user to quit early
-            puts ("your have scored" + " " +  score.to_s + "/" + questions.length.to_s) #gives the final score 
+            puts ("You have scored" + " " +  score.to_s + "/" + questions.length.to_s)
+            puts ColorizedString["Thank you for trying our quiz!"].colorize(:yellow) #gives the final score 
              exit
             elsif answer !=  "a" and answer != "b" and answer != "c"
                 #if the answer isn't one of the options let them retry
                 system"clear"
-                puts "Invalid input. Please try again:"     
+                puts ColorizedString["Invalid input. Please try again:"].colorize(:orange)     
             else 
                 system"clear"
-                puts "Sorry, the correct answer was (#{question.answer.upcase})" #if they get the answer wrong they don't get to retry
+                puts ColorizedString["Sorry, the correct answer was (#{question.answer.upcase})"].colorize(:cyan) #if they get the answer wrong they don't get to retry
                 looping = false 
             end 
         end 
@@ -53,18 +56,39 @@ def run_test(questions) #method to run the test
     return score #returns the score so that the final score can be displayed outside of the method
 end
 
+
+
 #the actual program
-puts "Welcome to the Quiz! type quit to exit early"
+puts ColorizedString["Welcome to the Quiz! type quit to exit early"].colorize(:magenta).blink
 score = run_test(questions) #because the method returns the score you can set it via running the method
 
+#end scoring 
 if score == 0 
-    puts "Better luck next time! You scored #{score}/#{questions.length}."
+    puts ColorizedString["Better luck next time! You scored #{score}/#{questions.length}."].colorize(:yellow)
 elsif score <= 3
-    puts ("Good effort! You scored" + " " +  score.to_s + "/" + questions.length.to_s)
+    puts ColorizedString["Good effort! You scored #{score}/#{questions.length}"].colorize(:light_green)
 else 
-    puts "Congratulations! You scored #{score}/#{questions.length}"
+    puts ColorizedString["Congratulations! You scored #{score}/#{questions.length}"].colorize(:green)
 end
-Collapse
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
