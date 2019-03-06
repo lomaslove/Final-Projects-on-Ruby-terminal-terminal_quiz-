@@ -55,10 +55,10 @@ Welcome --> Presents the question --> user gives an answer --> tells them whethe
 
 -------------------------------------------------------------------------------------------------------------------
 ## Screenshots:
+![slack messages](https://raw.githubusercontent.com/lomaslove/terminal_quiz/master/path/to/Screenshot%20(2).png)
+![trello board](https://raw.githubusercontent.com/lomaslove/terminal_quiz/master/path/to/Screenshot%20(3).png)
+![github](https://raw.githubusercontent.com/lomaslove/terminal_quiz/master/path/to/Screenshot%20(5).png)
+![source code](https://raw.githubusercontent.com/lomaslove/terminal_quiz/master/path/to/Screenshot%20(6).png)
 
 
 
-
-
-
- 
