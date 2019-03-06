@@ -1,3 +1,4 @@
+
 require 'colorized_string'
 
 class Question #class to create the questions and answers
@@ -22,7 +23,7 @@ q10 = "On the fake shopping website we used to find bugs by Trish Khoo, where wa
 #store the questions as new instances of the class with the prompt and answer
 questions = [
     Question.new(q1, "c"),
-    Question.new(q2, "b"),
+    Question.new(q2, "b"),actor
     Question.new(q3, "c"),
     Question.new(q4, "c"),
     Question.new(q5, "a"),
@@ -80,7 +81,7 @@ elsif score <= 3
 else 
     puts ColorizedString["Congratulations! You scored #{score}/#{questions.length}"].colorize(:green)
 end
-Collapse
+
 
 
 
