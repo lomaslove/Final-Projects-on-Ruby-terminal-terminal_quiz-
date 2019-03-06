@@ -11,6 +11,8 @@ To entertain! This is a fun multiple choice quiz that marks you on how many answ
 
 This program allows users to enter an answer to a question and know whether or not they were correct or incorrect. In addition to this, at the end of the quiz (length determined by the number or questions) the user is told their final score. If the user wants to quit, they can quit the quiz at any time by typing "quit", and will still get their final score. 
 
+We chose to write this program as a method that iterates through an array of class instances. This allows us to store the prompt and answer as one instance of a class in an array, which allows for easy retreval of the data and for a simple while loop & iteration to put the quesiton, get an answer and also check that answer against the correct one. This also allowed us to keep our code DRY more easily. 
+
 ## Instructions for use:
 1.    Start the program
 2.   Type in your answer: (a), (b) or (c)
@@ -49,8 +51,12 @@ Welcome --> Presents the question --> user gives an answer --> tells them whethe
  - Only allow a certain number of tries
  - Save results/current progress
 
+----------------------------------------------------------------------------------------------------------------
+## Potential Concerns/Issues
 
+This is a quiz; as such, there aren't many ethical or moral concerns, however it is important to consider the addictiveness of games and the potential for incorrect information to be propagated through improperly researched questions. 
 
+----------------------------------------------------------------------------------------------------------------
 ## Project plan:
 
     Monday evening: Brainstorming idea
@@ -72,6 +78,8 @@ Welcome --> Presents the question --> user gives an answer --> tells them whethe
 ![github](https://github.com/lomaslove/terminal_quiz/blob/master/screenshots/Screenshot%20(5).png)
 ![source code](https://github.com/lomaslove/terminal_quiz/blob/master/screenshots/Screenshot%20(6).png)
 ![source code](https://github.com/lomaslove/terminal_quiz/blob/master/screenshots/Screenshot%20(7).png)
+
+
 
 
 
